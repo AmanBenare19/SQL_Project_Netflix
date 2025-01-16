@@ -100,8 +100,7 @@ WHERE
 	SPLIT_PART(duration, ' ', 1)::INT > 5
 
 
-/* 9. Calculate the average yearly content release in India on Netflix and 
-return the top 5 years with the highest averages.*/
+/* 9. Count the total number of content items categorized by genre.*/
 
 SELECT 
 	UNNEST(STRING_TO_ARRAY(listed_in, ',')) as genre,
