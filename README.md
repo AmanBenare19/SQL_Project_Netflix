@@ -154,7 +154,7 @@ SELECT
 	COUNT(show_id) as total_release,
 	ROUND(
 		COUNT(show_id)::numeric/
-								(SELECT COUNT(show_id) FROM netflix WHERE country = 'Canada')::numeric * 100 
+                     (SELECT COUNT(show_id) FROM netflix WHERE country = 'Canada')::numeric * 100 
 		,2
 		)
 		as avg_release
@@ -212,6 +212,13 @@ FROM (
 GROUP BY 1,2
 ORDER BY 2
 ```
+### Conclusion
+This project gave us some interesting insights into Netflix’s content library using SQL. We explored how movies and TV shows are distributed, identified popular ratings, and looked at content trends across different countries and genres.
+
+We also dug into details like the longest movie, multi-season TV shows, and yearly content releases. Analyzing keywords in descriptions even helped categorize content based on themes.
+
+Overall, this project showed how SQL can be a powerful tool for analyzing real-world data and uncovering trends that could help in decision-making.
+
 
 
 
