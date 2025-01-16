@@ -1,3 +1,3 @@
 # Netflix Movie and TV Show Analysis with SQL
 
-![Netflix Logo]{}
+![Netflix Logo]{Netflix_logo.jpg}
