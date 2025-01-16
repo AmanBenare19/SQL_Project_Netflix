@@ -144,8 +144,7 @@ SELECT
 FROM netflix
 GROUP BY 1
 ```
-### 10. Calculate the average yearly content release
-### in Canada on Netflix and return the top 5 years with the highest averages.
+### 10. Calculate the average yearly content release in Canada on Netflix and return the top 5 years with the highest averages.
 
 ```sql
 SELECT 
@@ -193,8 +192,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 10
 ```
-### 15. Classify content based on the presence of keywords 'kill' and 'violence' in descriptions, 
-### labeling them as 'Bad' or 'Good,' and count the number in each category.
+### 15. Classify content based on the presence of keywords 'kill' and 'violence' in descriptions, labeling them as 'Bad' or 'Good,' and count the number in each category.
 ``` sql
 SELECT 
     category,
