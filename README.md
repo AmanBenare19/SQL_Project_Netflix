@@ -32,9 +32,15 @@ CREATE TABLE netflix_content (
     seasons INT,   -- Number of seasons (for TV Shows)
     rating VARCHAR(10),
     description TEXT,
-    added_date DATE
-);
-
+    added_date DATE);
+```
 ## Business Problems and Solutions
-
+### 1. Count the Number of Movies vs TV Shows
+```sql
+SELECT 
+    type,
+    COUNT(*)
+FROM netflix
+GROUP BY 1;
+```
 
