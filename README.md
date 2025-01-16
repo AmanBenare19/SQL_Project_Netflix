@@ -37,7 +37,7 @@ CREATE TABLE netflix
 );
 ```
 ## Business Problems and Solutions
-### 1. Count the Number of Movies vs TV Shows
+### 1. Determine the count of Movies versus TV Shows.
 ```sql
 SELECT 
     type,
@@ -136,8 +136,7 @@ WHERE
 	AND
 	SPLIT_PART(duration, ' ', 1)::INT > 5
 ```
-### 9. Calculate the average yearly content release in India on Netflix and 
-return the top 5 years with the highest averages.
+### 9. Count the total number of content items categorized by genre.
 ```sql
 SELECT 
 	UNNEST(STRING_TO_ARRAY(listed_in, ',')) as genre,
@@ -183,7 +182,7 @@ WHERE
 	AND 
 	release_year > EXTRACT(YEAR FROM CURRENT_DATE) - 10
 ```
-### 14. Find the top 10 actors who have appeared in the highest number of movies produced in Canada.
+### 14. Find the top 10 actors who have appeared in the most movies produced in Canada.
 ```sql
 SELECT 
 	UNNEST(STRING_TO_ARRAY(casts, ',')) as actor,
