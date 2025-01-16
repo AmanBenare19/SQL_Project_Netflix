@@ -102,7 +102,7 @@ select * from
   where type ='Movie') as subquery
 where duration = (select max(split_part(duration,' ',1):: numeric ) from netflix)
 ```
-### 6. Locate the longest movie available on Netflix.
+### 6. Retrieve content added to Netflix within the last 5 years.
 ```sql
 
 SELECT
