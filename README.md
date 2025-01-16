@@ -14,10 +14,10 @@ This project aims to analyze Netflix's vast collection of movies and TV shows us
 The dataset used for this analysis is the Netflix Movies and TV Shows dataset, which is available on Kaggle. You can access and download the dataset from the following link: [Dataset link](https://www.kaggle.com/datasets/shivamb/netflix-shows)
 
 ## Technologies Used
-PostgreSQL: Used for data manipulation and query execution.
-Kaggle Dataset: For raw data regarding Netflix's content.
+- PostgreSQL: Used for data manipulation and query execution.
+- Kaggle Dataset: For raw data regarding Netflix's content.
 
-### `netflix_content` Table Schema
+### Schema
 ```sql
 CREATE TABLE netflix_content (
     id SERIAL PRIMARY KEY,
@@ -35,5 +35,6 @@ CREATE TABLE netflix_content (
     added_date DATE
 );
 
+## Business Problems and Solutions
 
 
